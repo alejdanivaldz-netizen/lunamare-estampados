@@ -1,0 +1,187 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="img/lm-mark.png"><style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}</style><title>Lunamare Estampados</title>
+<meta name="description" content="Remeras, buzos y bolsitas estampadas con DTF en Pilar, Ñeembucú. Enfermeras del Chaco casi Avda. Irala. Tu diseño o el nuestro. Pedidos para empresas y uniformes.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap">
+<style>
+/* Layout: noche azul del logo como fondo continuo; la luna abre la página; catálogo en grilla, empresas como banda destacada, visita al final */
+:root{color-scheme:dark;
+  --night:#0b1e3f; --deep:#081631; --panel:#112a55; --line:#233f72; --moon:#ffffff; --mist:#b9c8e6; --glow:#e8eefc; --accent:#9fc2ff;
+  --display:"Nunito",ui-rounded,"Segoe UI",system-ui,sans-serif;
+  --body:"Nunito Sans","Segoe UI",system-ui,sans-serif;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--night);color:var(--glow);font-family:var(--body);font-size:16px;line-height:1.6}
+.in{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--night) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--night)}
+nav.top .in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+nav.top .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);letter-spacing:.18em;font-size:14px}
+nav.top .brand img{height:34px;width:auto}
+nav.top ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:14.5px}
+nav.top ul a{text-decoration:none;color:var(--mist)}
+nav.top ul a:hover{color:var(--moon)}
+@media (max-width:560px){nav.top ul{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--moon);color:var(--night);font-weight:700;text-decoration:none;border-radius:999px;padding:13px 22px;font-size:15.5px;border:1.5px solid var(--moon)}
+.btn.ghost{background:transparent;color:var(--moon)}
+.btn.sm{padding:8px 16px;font-size:14px}
+.btn:focus-visible,nav a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn svg{width:18px;height:18px;fill:currentColor}
+header.hero{padding-block:56px 64px;position:relative;overflow:hidden}
+header.hero .in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media (max-width:760px){header.hero .in{grid-template-columns:1fr;gap:28px} header.hero .moon{order:-1;max-width:220px;margin:0 auto}}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 14px}
+h1{font-family:var(--display);font-weight:300;font-size:clamp(36px,7vw,62px);line-height:1.05;margin:0 0 18px;text-wrap:balance;color:var(--moon)}
+h1 b{font-weight:700}
+.hero p.lead{font-size:18px;color:var(--mist);max-width:46ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.moon{position:relative;aspect-ratio:1;max-width:100%}
+.moon::before{content:"";position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 70%)}
+.moon img{position:relative;width:100%;height:auto;display:block;animation:rise 1.2s ease-out both}
+@keyframes rise{from{transform:translateY(10px);opacity:.6}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.moon img{animation:none}}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:26px 0 0;padding:0;list-style:none;font-size:14px;color:var(--mist)}
+.facts li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:middle}
+section{padding-block:64px}
+section h2{font-family:var(--display);font-weight:300;font-size:clamp(28px,5vw,40px);line-height:1.1;margin:0 0 10px;color:var(--moon);text-wrap:balance}
+section h2 b{font-weight:700}
+section .sub{color:var(--mist);max-width:60ch;margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.card .ico{width:64px;height:64px;fill:var(--glow);color:var(--glow);opacity:.9;margin-bottom:6px}
+.card h3{font-family:var(--display);font-weight:700;font-size:19px;margin:0;color:var(--moon)}
+.card p{margin:0;color:var(--mist);font-size:14.5px;flex:1}
+.card .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.price{font-weight:700;font-variant-numeric:tabular-nums;color:var(--moon)}
+.note{font-size:13.5px;color:var(--mist);margin-top:16px}
+.card{overflow:hidden}
+.card img.ph{display:block;width:calc(100% + 40px);max-width:none;margin:-20px -20px 12px;aspect-ratio:4/5;height:auto;object-fit:cover;background:var(--deep)}
+.how{display:grid;grid-template-columns:.8fr 1.2fr;gap:32px;align-items:center}
+@media (max-width:760px){.how{grid-template-columns:1fr}}
+.how .steps{grid-template-columns:1fr}
+.media{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--deep);max-width:100%}
+.media video,.media img{display:block;width:100%;height:auto}
+.how .media{max-width:360px;width:100%;justify-self:center;aspect-ratio:478/850}
+.how .media video{height:100%;object-fit:cover}
+.bizmedia{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+@media (max-width:760px){.bizmedia{grid-template-columns:repeat(2,1fr)}}
+.bizmedia .media{aspect-ratio:1}
+.bizmedia .media img,.bizmedia .media video{height:100%;object-fit:cover}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media (max-width:560px){.gal{grid-template-columns:repeat(2,1fr)}}
+.gal img{display:block;width:100%;aspect-ratio:1;height:auto;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s;list-style:none;padding:0;margin:0}
+@media (max-width:720px){.steps{grid-template-columns:1fr}}
+.steps li{counter-increment:s;border-top:1px solid var(--line);padding-top:16px}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:300;font-size:40px;color:var(--accent);display:block;line-height:1;margin-bottom:8px}
+.steps h3{font-family:var(--display);font-size:18px;margin:0 0 4px;color:var(--moon)}
+.steps p{margin:0;color:var(--mist);font-size:14.5px}
+.band{background:var(--deep);border-block:1px solid var(--line)}
+.biz{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+@media (max-width:760px){.biz{grid-template-columns:1fr}}
+.biz ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.biz li{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.biz li b{display:block;color:var(--moon);font-size:16px}
+.biz li span{color:var(--mist);font-size:14.5px}
+.visit{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:900px){.visit{grid-template-columns:repeat(2,1fr)}}
+.lnk{display:inline-block;margin-top:8px;color:var(--accent);font-weight:600;font-size:14.5px}
+.lnk:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (max-width:720px){.visit{grid-template-columns:1fr}}
+.visit div{border-top:1px solid var(--line);padding-top:14px;min-width:0}
+.visit .l{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.visit .v{font-size:17px;color:var(--moon);margin-top:4px;overflow-wrap:anywhere}
+footer{border-top:1px solid var(--line);padding-block:28px;color:var(--mist);font-size:13.5px}
+footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+footer img{height:40px;width:auto;opacity:.85}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Lunamare Estampados","address":{"@type":"PostalAddress","streetAddress":"Enfermeras del Chaco casi Avda. Irala","addressLocality":"Pilar","addressRegion":"Ñeembucú","addressCountry":"PY"},"telephone":"+595975775496","openingHours":"Mo-Sa 15:00-18:00","sameAs":["https://www.instagram.com/lunamare_estampados/"]}</script></head><body>
+
+
+<nav class="top"><div class="in">
+  <a class="brand" href="#inicio"><img src="img/lm-mark.png" alt="">LUNAMARE</a>
+  <ul><li><a href="#catalogo">Catálogo</a></li><li><a href="#trabajos">Trabajos</a></li><li><a href="#empresas">Empresas</a></li><li><a href="#visitanos">Visitanos</a></li></ul>
+  <a class="btn sm" href="https://wa.me/595975775496?text=Hola%20Lunamare%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a>
+</div></nav>
+
+<header class="hero" id="inicio"><div class="in">
+  <div>
+    <p class="eyebrow">Estampados DTF · Pilar, Ñeembucú</p>
+    <h1>Remeras con <b>tu diseño</b>, estampadas en Pilar</h1>
+    <p class="lead">Remeras, buzos y bolsitas con estampado DTF: colores vivos, que no se cuartean y duran lavado tras lavado. Traé tu idea o elegí uno de nuestros diseños.</p>
+    <div class="ctas">
+      <a class="btn" href="https://wa.me/595975775496?text=Hola%20Lunamare%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2 1.8.8 2.5.8 3.4.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3z"/></svg>Pedir por WhatsApp</a>
+      <a class="btn ghost" href="#catalogo">Ver precios</a>
+    </div>
+    <ul class="facts"><li>Enfermeras del Chaco casi Avda. Irala</li><li>Desde una unidad</li><li>Pedidos para empresas</li><li>Lunes a sábado, 15 a 18 h</li></ul>
+  </div>
+  <div class="moon"><img src="img/lm-logo.png" alt="Lunamare Estampados"></div>
+</div></header>
+
+<section id="catalogo"><div class="in">
+  <h2>Catálogo y <b>precios</b></h2>
+  <p class="sub">Precio por unidad con una estampa A4. Elegí la prenda y escribinos por WhatsApp con tu idea.</p>
+  <div class="grid"><article class="card"><img class="ph" src="img/basica.jpg" alt="Remera básica negra con estampa de flores de Paraguay" loading="lazy" width="720" height="900"><h3>Remera básica</h3><p>Algodón, corte clásico. Tu diseño o uno nuestro.</p><div class="foot"><span class="price">Gs. 85.000</span><a class="btn sm" href="https://wa.me/595975775496?text=Hola%20Lunamare%2C%20quiero%20pedir%20una%20remera%20b%C3%A1sica.%20%C2%BFMe%20pasan%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener">Pedir</a></div></article><article class="card"><img class="ph" src="img/pupera.jpg" alt="Remeras con frases estampadas" loading="lazy" width="720" height="900"><h3>Remera pupera</h3><p>Corte corto, ideal para combinar.</p><div class="foot"><span class="price">Gs. 80.000</span><a class="btn sm" href="https://wa.me/595975775496?text=Hola%20Lunamare%2C%20quiero%20pedir%20una%20remera%20pupera.%20%C2%BFMe%20pasan%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener">Pedir</a></div></article><article class="card"><img class="ph" src="img/oversize.jpg" alt="Remera oversize negra Paraguay Pilar" loading="lazy" width="720" height="900"><h3>Remera oversize</h3><p>Calce amplio, la más pedida para diseños grandes.</p><div class="foot"><span class="price">Gs. 110.000</span><a class="btn sm" href="https://wa.me/595975775496?text=Hola%20Lunamare%2C%20quiero%20pedir%20una%20remera%20oversize.%20%C2%BFMe%20pasan%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener">Pedir</a></div></article><article class="card"><img class="ph" src="img/canguro.jpg" alt="Buzo canguro verde con estampa Paraguay" loading="lazy" width="720" height="900"><h3>Buzo canguro</h3><p>Con capucha y bolsillo. Estampa adelante o en la espalda.</p><div class="foot"><span class="price">Gs. 175.000</span><a class="btn sm" href="https://wa.me/595975775496?text=Hola%20Lunamare%2C%20quiero%20pedir%20una%20buzo%20canguro.%20%C2%BFMe%20pasan%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener">Pedir</a></div></article><article class="card"><img class="ph" src="img/bolsita.jpg" alt="Bolsitas TNT estampadas para cumpleaños" loading="lazy" width="720" height="900"><h3>Bolsita TNT</h3><p>Para regalo o como bolsa de compra con tu logo.</p><div class="foot"><span class="price">Gs. 20.000</span><a class="btn sm" href="https://wa.me/595975775496?text=Hola%20Lunamare%2C%20quiero%20pedir%20una%20bolsita%20tnt.%20%C2%BFMe%20pasan%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener">Pedir</a></div></article></div>
+  <p class="note">Talles y colores según disponibilidad. Para pedidos personalizados pedimos una seña del 50%.</p>
+</div></section>
+
+<section><div class="in how">
+  <div class="media"><video src="img/video-44.mp4" poster="img/video-44.jpg" autoplay muted loop playsinline aria-label="Video: se despega el film DTF de una remera recién estampada"></video></div>
+  <div>
+    <h2>Cómo <b>pedir</b></h2>
+    <p class="sub">Del mensaje a tu prenda terminada, en tres pasos.</p>
+    <ol class="steps">
+    <li><h3>Elegí la prenda</h3><p>Remera, pupera, oversize, buzo o bolsita. Te ayudamos con el talle.</p></li>
+    <li><h3>Mandanos el diseño</h3><p>Tu imagen, tu logo o una idea. Si no tenés, lo armamos con vos.</p></li>
+    <li><h3>Retirá o recibí</h3><p>Te avisamos cuando está lista para retirar en el local o coordinamos el envío.</p></li>
+  </ol>
+  </div>
+</div></section>
+
+<section class="band" id="empresas"><div class="in biz">
+  <div>
+    <p class="eyebrow">Para empresas y comercios</p>
+    <h2>Tu marca, en <b>cada prenda</b></h2>
+    <p class="sub">Hacemos pedidos por cantidad con precio especial. Contanos qué necesitás y te pasamos un presupuesto.</p>
+    <a class="btn" href="https://wa.me/595975775496?text=Hola%20Lunamare%2C%20quiero%20un%20presupuesto%20para%20mi%20empresa.%20Necesito%3A" target="_blank" rel="noopener">Pedir presupuesto</a>
+  </div>
+  <ul>
+    <li><b>Remeras de uniforme</b><span>Con el logo de tu negocio, para todo el equipo.</span></li>
+    <li><b>Regalos de fin de año</b><span>Remeras y bolsitas con tu marca para tus clientes.</span></li>
+    <li><b>Bolsitas TNT con logo</b><span>Para entregar tus ventas con tu marca.</span></li>
+    <li><b>Eventos y promociones</b><span>Egresados, equipos, iglesias y eventos.</span></li>
+  </ul>
+</div>
+<div class="in"><div class="bizmedia">
+  <div class="media"><video src="img/video-46.mp4" poster="img/video-46.jpg" autoplay muted loop playsinline aria-label="Video: pedido de remeras para un estudio de pilates"></video></div>
+  <div class="media"><img src="img/empresa-aniversario.jpg" alt="Remeras bordó para un aniversario de empresa" loading="lazy"></div>
+  <div class="media"><img src="img/evento.jpg" alt="Remeras negras para un evento" loading="lazy"></div>
+  <div class="media"><img src="img/escuela.jpg" alt="Remeras para el Día del Niño de una escuela" loading="lazy"></div>
+</div></div></section>
+
+<section id="trabajos"><div class="in">
+  <h2>Trabajos <b>recientes</b></h2>
+  <p class="sub">Algunos pedidos que entregamos. Hay muchos más en nuestro Instagram.</p>
+  <div class="gal">
+    <img src="img/trabajo-cumple.jpg" alt="Remera de cumpleaños de 7 años" loading="lazy">
+    <img src="img/trabajo-salmo.jpg" alt="Remera negra con el Salmo 91" loading="lazy">
+    <img src="img/trabajo-colegio.jpg" alt="Remeras con logo institucional en varios colores" loading="lazy">
+    <img src="img/trabajo-negra.jpg" alt="Remera negra con diseño en blanco y negro" loading="lazy">
+    <img src="img/trabajo-banderas.jpg" alt="Remeras con bandera de Paraguay en la manga" loading="lazy">
+    <img src="img/trabajo-bolsitas.jpg" alt="Bolsitas estampadas para un cumpleaños" loading="lazy">
+  </div>
+  <p class="note"><a class="lnk" href="https://www.instagram.com/lunamare_estampados/" target="_blank" rel="noopener">Ver más en @lunamare_estampados</a></p>
+</div></section>
+
+<section id="visitanos"><div class="in">
+  <h2><b>Visitanos</b></h2>
+  <p class="sub">Atendemos en el local. Escribinos antes para tener tu pedido listo.</p>
+  <div class="visit">
+    <div><div class="l">Dirección</div><div class="v">Enfermeras del Chaco casi Avda. Irala<br>Pilar, Ñeembucú</div><a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=Enfermeras+del+Chaco+y+Avenida+Irala%2C+Pilar%2C+Paraguay" target="_blank" rel="noopener">Cómo llegar</a></div>
+    <div><div class="l">Horario</div><div class="v">Lunes a sábado<br>15:00 a 18:00</div></div>
+    <div><div class="l">WhatsApp</div><div class="v">0975 775 496</div></div>
+    <div><div class="l">Instagram</div><div class="v">@lunamare_estampados</div><a class="lnk" href="https://www.instagram.com/lunamare_estampados/" target="_blank" rel="noopener">Ver nuestros trabajos</a></div>
+  </div>
+</div></section>
+
+<footer><div class="in"><img src="img/lm-logo.png" alt="Lunamare Estampados"><span>© 2026 Lunamare Estampados · Enfermeras del Chaco casi Avda. Irala, Pilar · <a href="https://www.instagram.com/lunamare_estampados/" target="_blank" rel="noopener">@lunamare_estampados</a></span></div></footer>
+</body></html>
