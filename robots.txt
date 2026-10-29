@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lunamare-estampados.pages.dev/sitemap.xml
